@@ -211,6 +211,23 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702240203103_initialmigrate.cs" />
+    <Compile Include="Migrations\201702240203103_initialmigrate.Designer.cs">
+      <DependentUpon>201702240203103_initialmigrate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702240213486_UpdatedUser.cs" />
+    <Compile Include="Migrations\201702240213486_UpdatedUser.Designer.cs">
+      <DependentUpon>201702240213486_UpdatedUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702240306483_updateUser1.cs" />
+    <Compile Include="Migrations\201702240306483_updateUser1.Designer.cs">
+      <DependentUpon>201702240306483_updateUser1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702240311132_smallchanges.cs" />
+    <Compile Include="Migrations\201702240311132_smallchanges.Designer.cs">
+      <DependentUpon>201702240311132_smallchanges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -284,6 +301,20 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201702240203103_initialmigrate.resx">
+      <DependentUpon>201702240203103_initialmigrate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702240213486_UpdatedUser.resx">
+      <DependentUpon>201702240213486_UpdatedUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702240306483_updateUser1.resx">
+      <DependentUpon>201702240306483_updateUser1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702240311132_smallchanges.resx">
+      <DependentUpon>201702240311132_smallchanges.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
