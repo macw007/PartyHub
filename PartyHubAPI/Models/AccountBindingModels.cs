@@ -48,6 +48,15 @@ namespace PartyHubAPI.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        [Required]
+        [Display(Name = "FirstName")]
+        public string FirstName { get; set; }
+        [Display(Name = "LastName")]
+        public string LastName { get; set; }
+        public string NickName { get; set; }
+        public string PhoneNumber { get; set; }
+        public string DOB { get; set; }
     }
 
     public class RegisterExternalBindingModel

@@ -18,7 +18,7 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
-    <IISExpressSSLPort />
+    <IISExpressSSLPort>44343</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -227,6 +227,10 @@
     <Compile Include="Migrations\201702240311132_smallchanges.Designer.cs">
       <DependentUpon>201702240311132_smallchanges.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702261924134_removedup.cs" />
+    <Compile Include="Migrations\201702261924134_removedup.Designer.cs">
+      <DependentUpon>201702261924134_removedup.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -314,6 +318,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702240311132_smallchanges.resx">
       <DependentUpon>201702240311132_smallchanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702261924134_removedup.resx">
+      <DependentUpon>201702261924134_removedup.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

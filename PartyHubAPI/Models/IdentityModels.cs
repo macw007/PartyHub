@@ -11,16 +11,10 @@ namespace PartyHubAPI.Models
     public class ApplicationUser : IdentityUser
     {
         [Required]
-        public string FirstName { get; set; }
-
-        
+        public string FirstName { get; set; }        
         public string  LastName { get; set; }
-
         public string  NickName { get; set; }
-
-
         public string PhoneNumber { get; set; }
-        public string EmailAddress { get; set; }
         public string  DOB { get; set; }
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager, string authenticationType)
         {
