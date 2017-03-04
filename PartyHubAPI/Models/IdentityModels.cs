@@ -4,6 +4,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using System.ComponentModel.DataAnnotations;
+using System.Data.Entity;
 
 namespace PartyHubAPI.Models
 {
@@ -27,6 +28,9 @@ namespace PartyHubAPI.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Party> Partys { set; get; }
+        public DbSet<FollowParty> FollowParties { set; get; }
+        public DbSet<FollowUser> FollowUsers { set; get; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
@@ -35,6 +39,6 @@ namespace PartyHubAPI.Models
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
-        }
+        } 
     }
 }
